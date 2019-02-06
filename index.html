@@ -10,16 +10,15 @@
 
 <body>
     <div class="container">
-        <header>
+        <header class="navbar">
+        
             <ul>
-                <li><img src="" alt="ikon"></li>
-                <li>
-                   <button><a href="index.html">Start</a></button>
-                </li>
+                <li><img src="" alt="ikon" id="ikon"></li>
+                <li><button class="dropbtn"<a href="index.html">Start</a></button></li>
                 <li>
                     <div>
                         <button onclick="dropDownFunc()" class="dropbtn">HTML</button>
-                        <div id="myDropdown" class="dropdown-content">
+                        <div id="myDropdown" class="dropdown-content" id="dropdwnHTML">
                             <a href="#">column1</a>
                             <a href="#">column2</a>
                             <a href="#">column3</a>
@@ -29,7 +28,7 @@
                 <li>
                     <div>
                         <button onclick="dropDownFunc()" class="dropbtn">CSS</button>
-                        <div id="myDropdown" class="dropdown-content">
+                        <div id="myDropdown" class="dropdown-content" id="dropdwnCSS">
                             <a href="#">column1</a>
                             <a href="#">column2</a>
                             <a href="#">column3</a>
@@ -39,7 +38,7 @@
                 <li>
                     <div>
                         <button onclick="dropDownFunc()" class="dropbtn">Javascript</button>
-                        <div id="myDropdown" class="dropdown-content">
+                        <div id="myDropdown" class="dropdown-content" id="dropdwnJS">
                         <a href="#">column1</a>
                         <a href="#">column2</a>
                         <a href="#">column3</a>
@@ -49,7 +48,7 @@
                 <li>
                     <div>
                         <button onclick="dropDownFunc()" class="dropbtn">Photoshop</button>
-                        <div id="myDropdown" class="dropdown-content">
+                        <div id="myDropdown" class="dropdown-content" id="dropdwnPS">
                         <a href="#">column1</a>
                         <a href="#">column2</a>
                         <a href="#">column3</a>
@@ -60,7 +59,7 @@
             </ul>
         </header>
         <main>
-            <article>
+            <article class="block1">
                 <h1>Front-end Tutorial</h1>
                 <p>Välkommen till vår tutorial. På denna hemsida kommer du lära dig de grundläggande kunskaperna som krävs för att bygga din egen webbplats.</p>
                 <div class="cBLock">
@@ -68,6 +67,10 @@
                     <p>Vi rekommenderar att man följer kategorierna steg för steg om man vill göra sin egen webbplats utan förkunskaper. Annars har vi ett index för våra exempel om man vill veta mer kring någonting specifikt.</p>
                 </div>
                 <p>På HTML sidan går vi igenom hur man man strukturerar upp en webbsidas innehåll. CSS sidan går igenom hur man stylar HTML sidan. Javascript går igenom hur man skapar en sökfunktion m.m. Photoshop sidan går kort igenom hur man anpassar bilder för webben.</p>
+            </article>
+            <article class="block2">
+                <h1>block2</h1>
+
             </article>
             <footer>
                 <address>
