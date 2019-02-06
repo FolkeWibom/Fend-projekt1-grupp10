@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Frontend Tutorial - Startsida</title>
+    <link href="https://fonts.googleapis.com/css?family=KoHo|Open+Sans|Ubuntu+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container">
         <header class="navbar">
-        
-            <ul>
-                <li><img src="" alt="ikon" id="ikon"></li>
+        <div class="ikon">
+        <img src="Images/logo.svg" alt="ikon" >
+        </div>
+            <ul class="navUL">
                 <li><button class="dropbtn"<a href="index.html">Start</a></button></li>
                 <li>
                     <div class="dropDownHTML">
@@ -56,11 +57,14 @@
                     </div>                     
                 </li>
 
-                <li>
-                    <input id="inputSearch" type="text" placeholder="Search" onkeyup="searchFunction()">
-                    <button><a id="searchBtn" href="">Search</a></button>
-                </li>
             </ul>
+                
+                <div class="searchField">
+                    <input id="inputSearch" type="text" placeholder="Search" onkeyup="searchFunction()">
+                    <button class="searchbutton"><a id="searchBtn" href="">Search</a></button>
+                </div>
+                
+           
         </header>
         <main>
             <article class="block1">
