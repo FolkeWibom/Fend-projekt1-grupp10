@@ -2,6 +2,10 @@ header{
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 
+ul{
+  margin: 0;
+}
+
 body{
   margin:0;
   padding:0;
@@ -43,9 +47,7 @@ body{
     z-index: 1;
   }
 
-  #dropdwnCSS{
-    padding-left: 20px;
-  }
+
 
   
   .dropdown-content a {
@@ -58,6 +60,8 @@ body{
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
+  /* NAVBAR!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
   #ikon{
     align-content: center;
