@@ -5,23 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Frontend Tutorial - Startsida</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <header>
+        <header class="navbar">
+        
             <ul>
-                <li><img src="" alt="ikon"></li>
-                <li><a href="index.html">START</a></li>
-                <li><a href="htmlsida.html">HTML</a></li>
-                <li><a href="csssida.html">CSS</a></li>
-                <li><a href="javascriptsida.html">JAVASCRIPT</a></li>
-                <li><a href="photoshopsida.html">PHOTOSHOP</a></li>
+                <li><img src="" alt="ikon" id="ikon"></li>
+                <li><button class="dropbtn"<a href="index.html">Start</a></button></li>
+                <li>
+                    <div class="dropDownHTML">
+                        <button onclick="dropDownFuncHtml()" class="dropbtn">HTML</button>
+                        <div id="myDropdownHTML" class="dropdown-content" >
+                            <a href="#">column HTML 1</a>
+                            <a href="#">column HTML 2</a>
+                            <a href="#">column HTML 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropDownCSS">
+                        <button onclick="dropDownfuncCSS()" class="dropbtn">CSS</button>
+                        <div id="myDropdownCSS" class="dropdown-content" >
+                            <a href="#">column CSS 1</a>
+                            <a href="#">column CSS 2</a>
+                            <a href="#">column CSS 3</a>
+                        </div>
+                     </div>                    
+                </li>
+                <li>
+                    <div class="dropDownJS">
+                        <button onclick="dropDownfuncJS()" class="dropbtn">Javascript</button>
+                        <div id="myDropdownJS" class="dropdown-content" >
+                        <a href="#">column JS 1</a>
+                        <a href="#">column JS 2</a>
+                        <a href="#">column JS 3</a>
+                        </div>
+                    </div>                    
+                </li>
+                <li>
+                    <div class="dropDownPS">
+                        <button onclick="dropDownfuncPS()" class="dropbtn">Photoshop</button>
+                        <div id="myDropdownPS" class="dropdown-content">
+                        <a href="#">column PS 1</a>
+                        <a href="#">column PS 2</a>
+                        <a href="#">column PS 3</a>
+                        </div>
+                    </div>                     
+                </li>
+
                 <li><input type="text"><input type="button"></li>
             </ul>
         </header>
         <main>
-            <article>
+            <article class="block1">
                 <h1>Front-end Tutorial</h1>
                 <p>Välkommen till vår tutorial. På denna hemsida kommer du lära dig de grundläggande kunskaperna som krävs för att bygga din egen webbplats.</p>
                 <div class="cBLock">
@@ -29,6 +68,10 @@
                     <p>Vi rekommenderar att man följer kategorierna steg för steg om man vill göra sin egen webbplats utan förkunskaper. Annars har vi ett index för våra exempel om man vill veta mer kring någonting specifikt.</p>
                 </div>
                 <p>På HTML sidan går vi igenom hur man man strukturerar upp en webbsidas innehåll. CSS sidan går igenom hur man stylar HTML sidan. Javascript går igenom hur man skapar en sökfunktion m.m. Photoshop sidan går kort igenom hur man anpassar bilder för webben.</p>
+            </article>
+            <article class="block2">
+                <h1>block2</h1>
+
             </article>
             <footer>
                 <address>
@@ -42,5 +85,6 @@
             </footer>
         </main>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
