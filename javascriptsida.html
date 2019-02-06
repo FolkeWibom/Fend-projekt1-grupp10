@@ -5,30 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Frontend Tutorial - Javascript</title>
+    <link href="https://fonts.googleapis.com/css?family=KoHo|Open+Sans|Ubuntu+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container">
-        <header>
-            <ul>
-                <li><img src="" alt="ikon"></li>
-                <li><a href="index.html">STARTSIDA</a></li>
-                <li><a href="htmlsida.html">HTML</a></li>
-                <li><a href="csssida.html">CSS</a></li>
-                <li><a href="javascriptsida.html">JAVASCRIPT</a></li>
-                <li><a href="photoshopsida.html">PHOTOSHOP</a></li>
-                <li><input type="text"><input type="button"></li>
-            </ul>
+        <header class="navbar" id="javascriptFärg">
+            <div class="ikon">
+            <img src="Images/logo.svg" alt="ikon" >
+            </div>
+                <ul>
+                    <li><button class="dropbtn" onclick="window.location.href='index.html'">Start</button></li>
+                    <li>
+                        <div class="dropDownHTML">
+                            <button onclick="dropDownFuncHtml()" class="dropbtn">HTML</button>
+                            <div id="myDropdownHTML" class="dropdown-content" >
+                                <a href="htmlsida.html">column HTML 1</a>
+                                <a href="#">column HTML 2</a>
+                                <a href="#">column HTML 3</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropDownCSS">
+                            <button onclick="dropDownfuncCSS()" class="dropbtn">CSS</button>
+                            <div id="myDropdownCSS" class="dropdown-content" >
+                                <a id="google" href="https://www.google.se/">column CSS 1</a>
+                                <a href="csssida.html">column CSS 2</a>
+                                <a href="#">column CSS 3</a>
+                            </div>
+                        </div>                    
+                    </li>
+                    <li>
+                        <div class="dropDownJS">
+                            <button onclick="dropDownfuncJS()" class="dropbtn">Javascript</button>
+                            <div id="myDropdownJS" class="dropdown-content" >
+                            <a href="javascriptsida.html">column JS 1</a>
+                            <a href="#">column JS 2</a>
+                            <a href="#">column JS 3</a>
+                            </div>
+                        </div>                    
+                    </li>
+                    <li>
+                        <div class="dropDownPS">
+                            <button onclick="dropDownfuncPS()" class="dropbtn">Photoshop</button>
+                            <div id="myDropdownPS" class="dropdown-content">
+                            <a href="photoshopsida.html">column PS 1</a>
+                            <a href="#">column PS 2</a>
+                            <a href="#">column PS 3</a>
+                            </div>
+                        </div>                     
+                    </li>
+                </ul>
+                    <div class="searchField">
+                        <input id="inputSearch" type="text" placeholder="Search" onkeyup="searchFunction()">
+                        <button class="searchbutton"><a id="searchBtn" href="">Search</a></button>
+                    </div>
         </header>
         <main>
             <article>
                 <h1>Javascript</h1>
                 <p>Javascript är ett programmeringsspråk som tolkas av en webbläsare. Det används för att skapa funktioner till webbplatser och på så vis göra de mer funktionella och sidorna blir mindre statiska.</p>
-                <div class="cBlock">
+                <div class="javascriptBlock">
                     <p>I den här tutorialen kommer vi gå igenom hur man får en searchbar att fungera med javascript.</p>
                 </div>
             </article>
-            <footer>
+            <footer id="javascriptFärg">
                 <address>
                     Fend18 Projektarbete Grupp 10<br>
                     Samir Blom<br>
@@ -40,5 +82,6 @@
             </footer>
         </main>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
