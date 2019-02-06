@@ -1,3 +1,5 @@
+
+/* NAVBAR!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .navbar{
     background-color: #5D5C5B;
     text-align: center;
@@ -32,9 +34,7 @@
     z-index: 1;
   }
 
-  #dropdwnCSS{
-    padding-left: 20px;
-  }
+
 
   
   .dropdown-content a {
@@ -47,6 +47,8 @@
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
+  /* NAVBAR!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
   #ikon{
     align-content: center;
