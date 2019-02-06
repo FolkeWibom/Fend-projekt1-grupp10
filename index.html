@@ -28,7 +28,7 @@
                     <div class="dropDownCSS">
                         <button onclick="dropDownfuncCSS()" class="dropbtn">CSS</button>
                         <div id="myDropdownCSS" class="dropdown-content" >
-                            <a href="#">column CSS 1</a>
+                            <a id="google" href="https://www.google.se/">column CSS 1</a>
                             <a href="#">column CSS 2</a>
                             <a href="#">column CSS 3</a>
                         </div>
@@ -55,7 +55,10 @@
                     </div>                     
                 </li>
 
-                <li><input type="text"><input type="button"></li>
+                <li>
+                    <input id="inputSearch" type="text" placeholder="Search" onkeyup="searchFunction()">
+                    <button><a id="searchBtn" href="">Search</a></button>
+                </li>
             </ul>
         </header>
         <main>

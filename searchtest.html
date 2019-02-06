@@ -31,9 +31,8 @@
         /*Sparar texten man skrivit i inputfältet i en variabel*/
         let inputSearch = document.getElementById('inputSearch').value;
         /* Array med med a-taggarna i listan*/
-        let arr = [document.getElementById('google'), document.getElementById('wiki'),
-             document.getElementById('github'), document.getElementById('stack'),
-             document.getElementById('trello')];
+        //Alla länkar till kolumnerna ska ha ett Id och placeras i arrayen.
+        let arr = [document.getElementById('google'),];
         /*Loopar igenom arrayen för att se om inputSearch variabeln matchar något index i arrayen */
              for (let i = 0; i < arr.length; i++) {   
                  
