@@ -16,31 +16,16 @@ body{
   
 }
 
-.blank1{
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
 
-img{
-  grid-column-start: 5;
-  grid-column-end: 6;
-  width: 100px;
-  height: 100px;
-  float: left;
-}
+
 
     ul{
       padding: 0;
       margin: 0;
-      grid-column-start: 6;
-      grid-column-end: 7;
     }
 
 
-.blank2{
-  grid-column-start: 7;
-  grid-column-end: 12;
-}
+
 
 
 .navbar > ul > li{
@@ -106,9 +91,46 @@ img{
     height: 40px;
   }
 
+  /*HEADER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .ikon{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+  }
+  .ikon > img{
+    width: 100px;
+    height: 100px;
+    align-content: center;
+  }
+  .navUL{
+    grid-column-start: 2;
+    grid-column-end: 6;
+
+  }
+
+.searchField{
+  
+    grid-column-start: 6;
+    grid-column-end: 8;
+    
+}
+.searchField > input{
+  align-content: center;
+  margin-top: 30px;
+  margin-right: 0;
+}
+.searchField > button{
+  align-content: center;
+  margin-left: 0;
+}
+
+
+/*HEADER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*
+/*HEADER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
   input{
    
-    padding-bottom: 0px;
+    padding: 0px 0px 0px 0px;
     height: 40px;
     width: 200px;
     border-radius: 10px 0px 0px 10px;
