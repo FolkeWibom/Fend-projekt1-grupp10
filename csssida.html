@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,66 +9,70 @@
     <link href="https://fonts.googleapis.com/css?family=KoHo|Open+Sans|Ubuntu+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <header class="navbar" id="cssFärg">
             <div class="ikon">
-            <img src="Images/logo.svg" alt="ikon" >
+                <img src="Images/logo.svg" alt="ikon">
             </div>
-                <ul>
-                    <li><button class="dropbtn"><a id="start" href="index.html">Start</a></button></li>
-                    <li>
-                        <div class="dropDownHTML">
-                            <button onclick="dropDownFuncHtml()" class="dropbtn">HTML</button>
-                            <div id="myDropdownHTML" class="dropdown-content" >
-                                <a id="html" href="htmlsida.html">HTML</a>
-                                <a href="#">column HTML 2</a>
-                                <a href="#">column HTML 3</a>
-                            </div>
+            <ul>
+                <li><button class="dropbtn"><a id="start" href="index.html">Start</a></button></li>
+                <li>
+                    <div class="dropDownHTML">
+                        <button onmouseenter="dropDownFuncHtml()" class="dropbtn">HTML</button>
+                        <div id="myDropdownHTML" class="dropdown-content" onmouseleave="closeDropDown()">
+                            <a id="html" href="htmlsida.html">HTML</a>
+                            <a href="#">column HTML 2</a>
+                            <a href="#">column HTML 3</a>
                         </div>
-                    </li>
-                    <li>
-                        <div class="dropDownCSS">
-                            <button onclick="dropDownfuncCSS()" class="dropbtn">CSS</button>
-                            <div id="myDropdownCSS" class="dropdown-content" >
-                                <a id="css" href="csssida.html">CSS</a>
-                                <a href="#">column CSS 2</a>
-                                <a href="#">column CSS 3</a>
-                            </div>
-                        </div>                    
-                    </li>
-                    <li>
-                        <div class="dropDownJS">
-                            <button onclick="dropDownfuncJS()" class="dropbtn">Javascript</button>
-                            <div id="myDropdownJS" class="dropdown-content" >
+                    </div>
+                </li>
+                <li>
+                    <div class="dropDownCSS">
+                        <button onmouseenter="dropDownfuncCSS()" class="dropbtn">CSS</button>
+                        <div id="myDropdownCSS" class="dropdown-content" onmouseleave="closeDropDown()">
+                            <a id="css" href="csssida.html">CSS</a>
+                            <a href="csssida.html">column CSS 2</a>
+                            <a href="#">column CSS 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropDownJS">
+                        <button onmouseenter="dropDownfuncJS()" class="dropbtn">Javascript</button>
+                        <div id="myDropdownJS" class="dropdown-content" onmouseleave="closeDropDown()">
                             <a id="javascript" href="javascriptsida.html">Javascript</a>
                             <a href="#">column JS 2</a>
                             <a href="#">column JS 3</a>
-                            </div>
-                        </div>                    
-                    </li>
-                    <li>
-                        <div class="dropDownPS">
-                            <button onclick="dropDownfuncPS()" class="dropbtn">Photoshop</button>
-                            <div id="myDropdownPS" class="dropdown-content">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropDownPS">
+                        <button onmouseenter="dropDownfuncPS()" class="dropbtn">Photoshop</button>
+                        <div id="myDropdownPS" class="dropdown-content" onmouseleave="closeDropDown()">
                             <a id="photoshop" href="photoshopsida.html">Photoshop</a>
                             <a href="#">column PS 2</a>
                             <a href="#">column PS 3</a>
-                            </div>
-                        </div>                     
-                    </li>
-                </ul>
-                    <div class="searchField">
-                        <input id="inputSearch" type="text" placeholder="Search" onkeyup="searchFunction()">
-                        <button class="searchbutton"><a id="searchBtn" href="">Search</a></button>
+                        </div>
                     </div>
+                </li>
+            </ul>
+            <div class="searchField">
+                <input id="inputSearch" type="text" placeholder="Search" onkeyup="searchFunction()">
+                <button class="searchbutton"><a id="searchBtn" href="">Search</a></button>
+            </div>
         </header>
         <main>
             <article>
                 <h1>CSS</h1>
-                <p>HTML används främst för att ge sidan sitt innehåll och struktur CSS kommer sedan in för att ge webbsidan sin färg och form. Här kommer vi visa lite på hur vi strukturerar vår CSS kod samt hur koden förvandlar ett annars tråkigt html dokument till något lite roligare.</p>
+                <p>HTML används främst för att ge sidan sitt innehåll och struktur CSS kommer sedan in för att ge
+                    webbsidan sin färg och form. Här kommer vi visa lite på hur vi strukturerar vår CSS kod samt hur
+                    koden förvandlar ett annars tråkigt html dokument till något lite roligare.</p>
                 <div class="cssBlock">
-                    <p>Här går vi igenom hur man gör en webbplats inom kategorierna HTML, CSS, Javascript och Photoshop. Alla exempel vi visar är baserade på hur vi gjort på den här webbplatsen steg för steg.</p>
+                    <p>Här går vi igenom hur man gör en webbplats inom kategorierna HTML, CSS, Javascript och Photoshop.
+                        Alla exempel vi visar är baserade på hur vi gjort på den här webbplatsen steg för steg.</p>
                     <figure>
                         <img src="" alt="cssKod">
                         <figcaption>Bild på länk till CSS fil.</figcaption>
@@ -88,4 +93,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

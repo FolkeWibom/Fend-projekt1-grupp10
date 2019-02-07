@@ -1,21 +1,67 @@
   /*NAVBAR!!!!!!!!!! */
-  /* Öppna Dropdown listorna*/
+
+
+
+  /* Öppnar Dropdown listorna och stänger andra öppnade*/
 function dropDownFuncHtml() {
   document.getElementById("myDropdownHTML").classList.toggle("show");
+
+  let dropCss = document.getElementById("myDropdownCSS");
+  let dropJs = document.getElementById("myDropdownJS");
+  let dropPs = document.getElementById("myDropdownPS");
+  let dropArr = [dropCss, dropJs, dropPs];
+  for (let i = 0; i < dropArr.length; i++) {
+    let closeDrop = dropArr[i];
+    if (closeDrop.classList.toggle("show")) {
+      closeDrop.classList.remove('show');
+    }
   }
+      }
+
   function dropDownfuncCSS(){
     document.getElementById("myDropdownCSS").classList.toggle("show");
+
+    let dropHtml = document.getElementById("myDropdownHTML");
+    let dropJs = document.getElementById("myDropdownJS");
+    let dropPs = document.getElementById("myDropdownPS");
+    let dropArr = [dropHtml, dropJs, dropPs];
+    for (let i = 0; i < dropArr.length; i++) {
+      let closeDrop = dropArr[i];
+      if (closeDrop.classList.toggle("show")) {
+        closeDrop.classList.remove('show');
+      }
+    }
   }
   function dropDownfuncJS(){
     document.getElementById("myDropdownJS").classList.toggle("show");
+
+    let dropCss = document.getElementById("myDropdownCSS");
+    let dropHtml = document.getElementById("myDropdownHTML");
+    let dropPs = document.getElementById("myDropdownPS");
+    let dropArr = [dropCss, dropHtml, dropPs];
+    for (let i = 0; i < dropArr.length; i++) {
+      let closeDrop = dropArr[i];
+      if (closeDrop.classList.toggle("show")) {
+        closeDrop.classList.remove('show');
+      }
+    }
   }
   function dropDownfuncPS(){
     document.getElementById("myDropdownPS").classList.toggle("show");
+
+    let dropCss = document.getElementById("myDropdownCSS");
+    let dropJs = document.getElementById("myDropdownJS");
+    let dropHtml = document.getElementById("myDropdownHTML");
+    let dropArr = [dropCss, dropJs, dropHtml];
+    for (let i = 0; i < dropArr.length; i++) {
+      let closeDrop = dropArr[i];
+      if (closeDrop.classList.toggle("show")) {
+        closeDrop.classList.remove('show');
+      }
+    }
   }
-  
-  // Stänger dropdown listan om användaren klickar utanför den.
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
+
+   function closeDropDown() {
       let dropdowns = document.getElementsByClassName("dropdown-content");
       
       for (let i = 0; i < dropdowns.length; i++) {
@@ -23,10 +69,9 @@ function dropDownFuncHtml() {
         if (openDropdown.classList.contains('show')) {
           openDropdown.classList.remove('show');
         }
-      }
-    }
-  }
-
+      }     
+   } 
+  
   // SÖKFUNKTIONEN!!!!!!!!!!!!!!!!!!!!!!
 
           /*Funktion som triggas när man är i inputfältet med id inputSearch*/
