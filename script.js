@@ -34,7 +34,8 @@ function dropDownFuncHtml() {
             /*Sparar texten man skrivit i inputfältet i en variabel*/
             let inputSearch = document.getElementById('inputSearch').value;
             /* Array med med a-taggarna i listan*/
-            let arr = [document.getElementById('google'),];
+            let arr = [document.getElementById('start'), document.getElementById('html'), document.getElementById('css'),
+            document.getElementById('javascript'), document.getElementById('photoshop')];
             /*Loopar igenom arrayen för att se om inputSearch variabeln matchar något index i arrayen */
                  for (let i = 0; i < arr.length; i++) {   
                      
