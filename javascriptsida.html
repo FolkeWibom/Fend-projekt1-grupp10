@@ -43,13 +43,14 @@
                         <button onmouseenter="dropDownfuncJS()" class="dropbtn">Javascript</button>
                         <div id="myDropdownJS" class="dropdown-content" onmouseleave="closeDropDown()">
                             <a id="javascript" href="javascriptsida.html">Javascript</a>
-                            <a href="#script-taggen" id="script-taggen">Script-taggen</a>
-                            <a href="#variabler" id="variabler">Variabler</a>
-                            <a href="#DOM" id="dom">DOM</a>
-                            <a href="#funktioner" id="funktioner">Funktioner</a>
-                            <a href="#loopar" id="loopar">Loopar</a>
-                            <a href="#navigationsbar" id="navigationsbar">Navigationsbar</a>
-                            <a href="#sökfält" id="sökfält">Sökfält</a>
+                            <a href="#script-taggenlink" id="script-taggen">Script-taggen</a>
+                            <a href="#variablerlink" id="variabler">Variabler</a>
+                            <a href="#DOMlink" id="dom">DOM</a>
+                            <a href="#funktionerlink" id="funktioner">Funktioner</a>
+                            <a href="#arrayerlink" id="arrayer">Arrayer</a>
+                            <a href="#looparlink" id="loopar">Loopar</a>
+                            <a href="#navigationsbarlink" id="navigationsbar">Navigationsbar</a>
+                            <a href="#sökfältlink" id="sökfält">Sökfält</a>
                         </div>
                     </div>
                 </li>
@@ -86,7 +87,7 @@
                     </p>
                 </div>
                 <div class="javascriptBlock">
-                    <a name="script-taggen"></a>
+                    <a id="script-taggenlink"></a>
                     <h2>Koppla Javascript till din Html.</h2>
                     <p>
                         Till att börja med behöver du inkludera en script-tagg till din Html. Du kan antingen välja att
@@ -104,7 +105,8 @@
                     </p>
                 </div>
                 <div>
-                    <a name="variabler"></a>
+                    <a id="variablerlink"></a>
+
                     <h2>Variabler</h2>
                     <p>
                         Variabler i programmering fungerar som en behållare för ett värde. Det finns fem olika datatyper
@@ -115,8 +117,9 @@
                         Exempel snutt.
                     </p>
                 </div>
-                <div class="javascriptBlock">
-                    <a name="DOM"></a>
+                <div class="javascriptBlock" id="DOM">
+                    <a id="DOMlink"></a>
+
                     <h2>DOM och hur man manipulerar den.</h2>
                     <p>
                         Med Htmls DOM, kan Javascript få tillgång till och manipulera alla element från HTML-trädet.
@@ -137,20 +140,57 @@
                     </p>
                 </div>
                 <div>
-                    <a name="funktioner"></a>
+                    <a id="funktionerlink"></a>
                     <h2>Funktioner</h2>
+                    <p>
+                        En javascript funktion är en kodsnutt skapad för att utföra en specifik uppgift. Funktioner
+                        exekveras när någonting anropar dem. *Exempel kod som visar hur man deklarerar en funktion och
+                        ett exempel.*
+                        <h3> Events </h3>
+                        I denna tutorial exekverar vi våra funktionerna genom javascript events. Vi använder oss av tre
+                        olika versioner av dessa: onmouseenter(exekverar funktionen genom att ha hovra över ett element
+                        ), onmouseleave(triggar funktionen när man slutar hovra över ett element) som hör ihop och
+                        onkeyup (exekverar funktionen när man har markerat ett inputfält) *Exempel, onmouseenter,
+                        onmouseleave*
+
+                    </p>
                 </div>
                 <div class="javascriptBlock">
-                    <a name="loopar"></a>
-                    <h2>Loopar</h2>
+                    <a id="arrayerlink"></a>
+
+                    <h2>arrayer</h2>
+                    <p>
+                        En array används för att spara flera värden i samma variabel. De fungerar ungefär som en lista,
+                        *se kodsnutten för exempel*. Arrayer är väldigt användbara om du behöver spara många värden och
+                        enkelt vill hämta dem. Arrayer kan skrivas på många olika sätt beroende på dess syfte, de
+                        har också många användbara metoder.
+                        Vi behöver inte gå in detta så djupt då vi enbart använt dessa inom ett användningsområde.
+                        <strong>*kodsnutt gå igenom en array som innehåller ett par variabler, skriv ut ett av arrayens
+                            index*</strong>
+                    </p>
                 </div>
                 <div>
-                    <a name="navigationsbar"></a>
+                    <a id="looparlink"></a>
+
+                    <h2>Loopar</h2>
+                    <p>
+                        Loopar används för att repetera ett kodblock fram tills att ett visst tillstånd blir mött.
+                        Tillstånden brukar även kallas statements och för detta kan man använda tex en if-sats.
+                        Det finns olika former av loopar som tex, while, do-while och for-loopen. Vi går igenom
+                        for-loopen nu då vi enbart använder oss av den under vår tutorial.
+                       <strong> *kodsnutt på en for-loop som loopar igenom en array och bryts när ett visst index möts.* </strong>
+                    </p>
+                </div>
+                <div class="javascriptBlock">
+                    <a id="navigationsbarlink"></a>
                     <h2>Navigationsbar</h2>
 
                 </div>
-                <div class="javascriptBlock">
-                    <a name="sökfält"></a>
+                <div>
+
+                </div>
+                <div>
+                    <a id="sökfältlink"></a>
                     <h2>Sökfält</h2>
                 </div>
 

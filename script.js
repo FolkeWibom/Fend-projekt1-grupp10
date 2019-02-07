@@ -32,6 +32,7 @@ function dropDownfuncCSS() {
     }
   }
 }
+
 function dropDownfuncJS() {
   document.getElementById("myDropdownJS").classList.toggle("show");
 
@@ -46,6 +47,7 @@ function dropDownfuncJS() {
     }
   }
 }
+
 function dropDownfuncPS() {
   document.getElementById("myDropdownPS").classList.toggle("show");
 
@@ -82,12 +84,13 @@ function searchFunction() {
   let arr = [document.getElementById('start'), document.getElementById('html'), document.getElementById('css'),
   document.getElementById('javascript'), document.getElementById('photoshop'), document.getElementById('script-taggen'),
    document.getElementById('variabler'), document.getElementById('dom'), document.getElementById('funktioner'),
-    document.getElementById('loopar'), document.getElementById('navigationsbar'), document.getElementById('sökfält')];
+    document.getElementById('loopar'), document.getElementById('navigationsbar'), document.getElementById('sökfält'),
+     document.getElementById('arrayer')];
   /*Loopar igenom arrayen för att se om inputSearch variabeln matchar något index i arrayen */
   for (let i = 0; i < arr.length; i++) {
 
     /*Om de matchar ska länkens href attributet kopieras över till sökknappens href attribut*/
-    if (inputSearch == arr[i].id) {
+     if (inputSearch == arr[i].id) {
       let link = arr[i];
       document.getElementById('searchBtn').href = link;
     }
