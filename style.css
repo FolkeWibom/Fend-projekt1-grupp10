@@ -1,164 +1,181 @@
+/* ***HEADER*** */
+
 header{
-  display: grid;
-  font-family: 'Ubuntu Condensed', sans-serif;
+display: grid;
+font-family: 'Ubuntu Condensed', sans-serif;
 }
 
-
-body{
-  margin:0;
-  padding:0;
+#indexFärg{
+  background-color: #5D5C5B;
 }
+#htmlFärg{
+  background-color: rgb(235, 107, 57);
+}
+#cssFärg{
+  background-color: rgb(92, 94, 204);
+}
+#javascriptFärg{
+  background-color: rgb(255, 255, 81);
+}
+#photoshopFärg{
+  background-color: rgb(129, 173, 255);
+}
+
+.ikon{
+grid-column-start: 1;
+grid-column-end: 2;
+
+}
+.ikon img{
+width: 100px;
+height: 100px;
+align-content: center;
+}
+
+/* ***NAVBAR*** */
 
 .navbar{
   margin-top: 0;
-  background-color: #5D5C5B;
   text-align: center;
-  
 }
 
-
-
-
-    ul{
-      padding: 0;
-      margin: 0;
-    }
-
-
-
-
-
-.navbar > ul > li{
-    display: inline-block;
+.navbar ul{
+  padding: 0;
+  margin: 0;
+  grid-column-start: 2;
+  grid-column-end: 6;
 }
 
+.navbar ul li{
+display: inline-block;
+}
 
 .dropbtn {
-    font-family: 'Ubuntu Condensed', sans-serif;
-    background-color: #5D5C5B;
-    padding: 15px;
-    margin: 20px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    text-decoration: underline;
-  }
+font-family: 'Ubuntu Condensed', sans-serif;
+background-color: transparent;
+padding: 15px;
+margin: 20px;
+font-size: 20px;
+border: none;
+cursor: pointer;
+}
 
-  .dropdown-content { 
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown a:hover {background-color: #ddd;}
-  
-  .show {display: block;}
+.dropbtn:hover, .dropbtn:focus {
+text-decoration: underline;
+}
 
-  /* NAVBAR!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.dropdown-content { 
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
 
-  #ikon{
-    align-content: center;
-  }
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
 
-  #searchBtn{
-    color: black;
-  }
+.dropdown a:hover {background-color: #ddd;}
 
-  .searchbutton{
-    background-color: white; 
-    border: none;
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 0px 10px 10px 0px;
-    height: 40px;
-  }
+.show {display: block;}
 
-  /*HEADER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-  .ikon{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    
-  }
-  .ikon > img{
-    width: 100px;
-    height: 100px;
-    align-content: center;
-  }
-  .navUL{
-    grid-column-start: 2;
-    grid-column-end: 6;
+/* ***SEARCHBAR*** */
 
-  }
+#searchBtn{
+color: black;
+}
+
+.searchbutton{
+background-color: white; 
+border: none;
+color: white;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 0px 10px 10px 0px;
+height: 40px;
+}
 
 .searchField{
-  
-    grid-column-start: 6;
-    grid-column-end: 8;
-    
+
+grid-column-start: 6;
+grid-column-end: 8;
+
 }
-.searchField > input{
-  align-content: center;
-  margin-top: 30px;
-  margin-right: 0;
+.searchField input{
+align-content: center;
+margin-top: 30px;
+text-indent: 20px;
 }
-.searchField > button{
-  align-content: center;
-  margin-left: 0;
+.searchField button{
+align-content: center;
+margin-left: 0;
 }
 
+input{
 
-/*HEADER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*
-/*HEADER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+padding: 0px 0px 0px 0px;
+height: 40px;
+width: 200px;
+border-radius: 10px 0px 0px 10px;
+border:none;
+}
 
-  input{
-   
-    padding: 0px 0px 0px 0px;
-    height: 40px;
-    width: 200px;
-    border-radius: 10px 0px 0px 10px;
-    border:none;
-  }
+/* ***BODY*** */
 
-  ::placeholder{
-    font-size: 15px;
-  }
+body{
+margin:0;
+padding:0;
+}
 
-  article{
-    text-align: center;
-    font-family: 'KoHo', sans-serif;
-  }
+::placeholder{
+font-size: 15px;
+}
 
-  .block2{
-    padding-top: 1px;
-    background-color: #5D5C5B;
-  }
+article{
+text-align: center;
+font-family: 'KoHo', sans-serif;
+}
 
-  footer {
-    font-family: 'Open Sans', sans-serif;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #5D5C5B;
-    color: white;
-    text-align: center;
-    padding: 10px;
- }
+/* ***FÄRGBLOCK*** */
+
+.indexBlock{
+background-color: rgba(93, 92, 91, 0.13);
+padding: 2px;
+}
+.htmlBlock{
+background-color: rgba(223, 65, 2, 0.075);
+padding: 2px;
+}
+.cssBlock{
+background-color: rgba(92, 94, 204, 0.082);
+padding: 2px;
+}
+.javascriptBlock{
+background-color: rgba(255, 253, 140, 0.479);
+padding: 2px;
+}
+.photoshopBlock{
+background-color: rgba(129, 173, 255, 0.151);
+padding: 2px;
+}
+
+/* ***FOOTER*** */
+
+footer {
+font-family: 'Open Sans', sans-serif;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+text-align: center;
+padding: 10px;
+}
