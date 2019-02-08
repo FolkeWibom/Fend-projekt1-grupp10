@@ -178,12 +178,39 @@
                         Tillstånden brukar även kallas statements och för detta kan man använda tex en if-sats.
                         Det finns olika former av loopar som tex, while, do-while och for-loopen. Vi går igenom
                         for-loopen nu då vi enbart använder oss av den under vår tutorial.
-                       <strong> *kodsnutt på en for-loop som loopar igenom en array och bryts när ett visst index möts.* </strong>
+                        <strong> *kodsnutt på en for-loop som loopar igenom en array och bryts när ett visst index
+                            möts.* </strong>
                     </p>
                 </div>
                 <div class="javascriptBlock">
                     <a id="navigationsbarlink"></a>
                     <h2>Navigationsbar</h2>
+                    <h3>steg1 - funktionerna</h3>
+                    <p>
+                        steg1. funktion dropDownfuncHtml(). Denna funktion anropar html elementet med id mydropdownHTML
+                        som vi sedan lagt en metod .classlist.toggle(“show”) som lägger till klassen “show”. Show är en
+                        CSS klass vi skapat som gör att listan syns. Utan denna klass göms html Elementet.
+                    </p>
+                    <p>
+                        För att bara en av dropdown listorna ska kunna vara öppen åt gången. Har vi deklarerat ut tre
+                        variabler som innehåller de andra listorna. Vi har lagt dessa inuti en array som vi loopar
+                        igenom. Den kollar då ifall någon av de andra listorna är öppen och koden inuti if-satsen
+                        stänger då de andra eventuella öppna listorna.
+                    </p>
+
+                    <p>
+                        Denna funktion är i princip samma sak som den undre delen av den tidigare funktionen.
+                        Den använder vi för att stänga alla öppna listor.
+
+                    </p>
+                    <h3>Steg 2 - Exekvera funktionerna</h3>
+                    <p>
+                        För att exekvera funktionerna har vi lagt ut events i html sidan. Här är divisionen som
+                        innehåller html knappen. På knappen ligger eventet onmouseenter. På själva listan har vi eventet
+                        onmouseleave som exekverar closeDropDown funktionen när man drar musen ifrån själva listan.
+                    </p>
+
+
 
                 </div>
                 <div>
@@ -192,6 +219,19 @@
                 <div>
                     <a id="sökfältlink"></a>
                     <h2>Sökfält</h2>
+                    <h3>steg 1 - funktionen</h3>
+                    <p>
+                        Börjar med att deklarara ut en variabel som innehåller sökfältets värde.
+                        sedan har vi gjort en array som innehåller idt på alla länkar sidan innehåller.
+                        Vi loopar igenom arrayen och kollar ifall inputsearch variabeln matchar någon av länkarnas id.
+                        Om värdet finns kommer a-taggen inuti sökknappens href attributet ändras till samma som länkens.
+                    </p>
+                    <h3>steg 2 - exekvera funktionen</h3>
+                    <p>
+                        Återigen triggar vi funktionen med events. Denna gång med onkeyup, den gör så att så snart du
+                        trycker på sökfältet så exekveras funktionen, så när du skriver något i den jämför den värdet
+                        med vad som finns i arrayen.
+                    </p>
                 </div>
 
             </article>
