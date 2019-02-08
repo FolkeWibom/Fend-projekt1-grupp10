@@ -12,7 +12,7 @@
 
 <body>
     <div class="container">
-        <header class="navbar" id="javascriptFärg">
+        <header class="navbar" id="javascriptFärg" onmouseleave="closeDropDown()">
             <div class="ikon">
                 <img src="Images/logo.svg" alt="ikon">
             </div>
@@ -43,8 +43,14 @@
                         <button onmouseenter="dropDownfuncJS()" class="dropbtn">Javascript</button>
                         <div id="myDropdownJS" class="dropdown-content" onmouseleave="closeDropDown()">
                             <a id="javascript" href="javascriptsida.html">Javascript</a>
-                            <a href="#">column JS 2</a>
-                            <a href="#">column JS 3</a>
+                            <a href="#script-taggenlink" id="script-taggen">Script-taggen</a>
+                            <a href="#variablerlink" id="variabler">Variabler</a>
+                            <a href="#DOMlink" id="dom">DOM</a>
+                            <a href="#funktionerlink" id="funktioner">Funktioner</a>
+                            <a href="#arrayerlink" id="arrayer">Arrayer</a>
+                            <a href="#looparlink" id="loopar">Loopar</a>
+                            <a href="#navigationsbarlink" id="navigationsbar">Navigationsbar</a>
+                            <a href="#sökfältlink" id="sökfält">Sökfält</a>
                         </div>
                     </div>
                 </li>
@@ -66,13 +72,168 @@
         </header>
         <main>
             <article>
-                <h1>Javascript</h1>
-                <p>Javascript är ett programmeringsspråk som tolkas av en webbläsare. Det används för att skapa
-                    funktioner till webbplatser och på så vis göra de mer funktionella och sidorna blir mindre statiska.
-                </p>
-                <div class="javascriptBlock">
-                    <p>I den här tutorialen kommer vi gå igenom hur man får en searchbar att fungera med javascript.</p>
+                <div>
+                    <h1>Javascript</h1>
+                    <p>
+
+                        Kort sagt är Javascript ett programmeringsspråk som tolkas av en webbläsare. Det används för att
+                        skapa funktioner till webbplatser och på så vis göra de mer funktionella. Vanliga funktioner kan
+                        vara att manipulera bilder, godkännande av form-listor eller dynamiska ändringar av sidans
+                        innehåll.<br>
+
+                        I den här tutorialen kommer du lära dig hur man tillämpar Javascript till din Html och CSS och
+                        ge
+                        dig en förståelse till vad du kan använda Javascript för.
+                    </p>
                 </div>
+                <div class="javascriptBlock">
+                    <a id="script-taggenlink"></a>
+                    <h2>Koppla Javascript till din Html.</h2>
+                    <p>
+                        Till att börja med behöver du inkludera en script-tagg till din Html. Du kan antingen välja att
+                        göra en script tagg längst ner inuti htmls body-tagg och skriva din kod där. Man kan också
+                        skriva koden i en separat fil och länka till den utifrån script-taggen, väljer du att länka kan
+                        du inte skriva någon kod i taggen.<br>
+                        Eftersom koden blir lättare att läsa och hålla reda på med en separat fil väljer vi att göra
+                        det.<br>
+                        Skapa en ny fil med din text-editor och välj Javascript som format. Det är smart att välja
+                        relevanta namn. Vi döper vår till script.js
+
+                        <strong>bild på tagg utan länk &lt;script>&lt;/script&gt;. Bild på tagg med länk &lt;script
+                            src=”script.js”&gt;&lt;/script&gt;.</strong>
+
+                    </p>
+                </div>
+                <div>
+                    <a id="variablerlink"></a>
+
+                    <h2>Variabler</h2>
+                    <p>
+                        Variabler i programmering fungerar som en behållare för ett värde. Det finns fem olika datatyper
+                        i Javascript, Boolean(true or false), null, undefined, number eller string. javascript kommer
+                        tolka din variabel utifrån en av dessa beroende på vad du ger den för värde.
+                        Ger du den en siffra så tolkas den som number, innehåller den en text tolkas den som string. Du
+                        deklerar en variabel genom att skriva let ettNamn = “värde”;.
+                        Exempel snutt.
+                    </p>
+                </div>
+                <div class="javascriptBlock" id="DOM">
+                    <a id="DOMlink"></a>
+
+                    <h2>DOM och hur man manipulerar den.</h2>
+                    <p>
+                        Med Htmls DOM, kan Javascript få tillgång till och manipulera alla element från HTML-trädet.
+                        När en webbsida öppnas så skapar webbläsaren ett Document Object Model av sidan. DOM skapar då
+                        objekt av alla element som du kan manipulera med JS genom att anropa dem i din kod.
+
+                        <strong>let rubrik = document.getElementByID(“domExample”);</strong>
+                        Tex, hade huvudrubriken på denna sida haft id=domExample. Hade vi hämtat rubriken.
+                    </p>
+                    <p>
+                        <h3> Egenskaper </h3>
+                        Vill vi bara hämta texten elementet innehåller. Hade vi kunnat använda oss av en egenskap i DOM
+                        som heter innerHTML. Variabeln hade då skrivits:
+                        <strong> let rubrik = document.getElementByID(“domExample”).innerHTML;</strong> <br>
+                        Snutt på ett exempel som visar hur man tar rubrikens innehåll och lägger det värdet i en
+                        paragraf.
+
+                    </p>
+                </div>
+                <div>
+                    <a id="funktionerlink"></a>
+                    <h2>Funktioner</h2>
+                    <p>
+                        En javascript funktion är en kodsnutt skapad för att utföra en specifik uppgift. Funktioner
+                        exekveras när någonting anropar dem. *Exempel kod som visar hur man deklarerar en funktion och
+                        ett exempel.*
+                        <h3> Events </h3>
+                        I denna tutorial exekverar vi våra funktionerna genom javascript events. Vi använder oss av tre
+                        olika versioner av dessa: onmouseenter(exekverar funktionen genom att ha hovra över ett element
+                        ), onmouseleave(triggar funktionen när man slutar hovra över ett element) som hör ihop och
+                        onkeyup (exekverar funktionen när man har markerat ett inputfält) *Exempel, onmouseenter,
+                        onmouseleave*
+
+                    </p>
+                </div>
+                <div class="javascriptBlock">
+                    <a id="arrayerlink"></a>
+
+                    <h2>arrayer</h2>
+                    <p>
+                        En array används för att spara flera värden i samma variabel. De fungerar ungefär som en lista,
+                        *se kodsnutten för exempel*. Arrayer är väldigt användbara om du behöver spara många värden och
+                        enkelt vill hämta dem. Arrayer kan skrivas på många olika sätt beroende på dess syfte, de
+                        har också många användbara metoder.
+                        Vi behöver inte gå in detta så djupt då vi enbart använt dessa inom ett användningsområde.
+                        <strong>*kodsnutt gå igenom en array som innehåller ett par variabler, skriv ut ett av arrayens
+                            index*</strong>
+                    </p>
+                </div>
+                <div>
+                    <a id="looparlink"></a>
+
+                    <h2>Loopar</h2>
+                    <p>
+                        Loopar används för att repetera ett kodblock fram tills att ett visst tillstånd blir mött.
+                        Tillstånden brukar även kallas statements och för detta kan man använda tex en if-sats.
+                        Det finns olika former av loopar som tex, while, do-while och for-loopen. Vi går igenom
+                        for-loopen nu då vi enbart använder oss av den under vår tutorial.
+                        <strong> *kodsnutt på en for-loop som loopar igenom en array och bryts när ett visst index
+                            möts.* </strong>
+                    </p>
+                </div>
+                <div class="javascriptBlock">
+                    <a id="navigationsbarlink"></a>
+                    <h2>Navigationsbar</h2>
+                    <h3>steg1 - funktionerna</h3>
+                    <p>
+                        steg1. funktion dropDownfuncHtml(). Denna funktion anropar html elementet med id mydropdownHTML
+                        som vi sedan lagt en metod .classlist.toggle(“show”) som lägger till klassen “show”. Show är en
+                        CSS klass vi skapat som gör att listan syns. Utan denna klass göms html Elementet.
+                    </p>
+                    <p>
+                        För att bara en av dropdown listorna ska kunna vara öppen åt gången. Har vi deklarerat ut tre
+                        variabler som innehåller de andra listorna. Vi har lagt dessa inuti en array som vi loopar
+                        igenom. Den kollar då ifall någon av de andra listorna är öppen och koden inuti if-satsen
+                        stänger då de andra eventuella öppna listorna.
+                    </p>
+
+                    <p>
+                        Denna funktion är i princip samma sak som den undre delen av den tidigare funktionen.
+                        Den använder vi för att stänga alla öppna listor.
+
+                    </p>
+                    <h3>Steg 2 - Exekvera funktionerna</h3>
+                    <p>
+                        För att exekvera funktionerna har vi lagt ut events i html sidan. Här är divisionen som
+                        innehåller html knappen. På knappen ligger eventet onmouseenter. På själva listan har vi eventet
+                        onmouseleave som exekverar closeDropDown funktionen när man drar musen ifrån själva listan.
+                    </p>
+
+
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    <a id="sökfältlink"></a>
+                    <h2>Sökfält</h2>
+                    <h3>steg 1 - funktionen</h3>
+                    <p>
+                        Börjar med att deklarara ut en variabel som innehåller sökfältets värde.
+                        sedan har vi gjort en array som innehåller idt på alla länkar sidan innehåller.
+                        Vi loopar igenom arrayen och kollar ifall inputsearch variabeln matchar någon av länkarnas id.
+                        Om värdet finns kommer a-taggen inuti sökknappens href attributet ändras till samma som länkens.
+                    </p>
+                    <h3>steg 2 - exekvera funktionen</h3>
+                    <p>
+                        Återigen triggar vi funktionen med events. Denna gång med onkeyup, den gör så att så snart du
+                        trycker på sökfältet så exekveras funktionen, så när du skriver något i den jämför den värdet
+                        med vad som finns i arrayen.
+                    </p>
+                </div>
+
             </article>
             <footer id="javascriptFärg">
                 <address>
