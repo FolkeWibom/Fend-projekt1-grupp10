@@ -144,12 +144,17 @@ padding:0;
 }
 
 ::placeholder{
-font-size: 15px;
+  font-size: 15px;
 }
 
 article{
-text-align: center;
-font-family: 'KoHo', sans-serif;
+  text-align: center;
+  font-family: 'KoHo', sans-serif;
+}
+
+article p{
+  margin: 10px 25%;
+  
 }
 
 article p{
