@@ -188,11 +188,14 @@ padding: 2px;
 
 pre code{
   display: block;
+  text-align: left;
+  font-size: 14px;
   background-color: rgba(255, 255, 255, 0.76);
   border-style: solid;
   border-width: 1px;
   border-color: rgb(199, 206, 212);
   padding: 20px;
+  margin: 0 25%;
 }
 
 /* ***FOOTER*** */
