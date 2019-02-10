@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Frontend Tutorial - HTML</title>
-    <link href="https://fonts.googleapis.com/css?family=KoHo|Open+Sans|Ubuntu+Condensed|Space+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=KoHo|Open+Sans|Ubuntu+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -91,29 +91,51 @@
     &lt;link rel="stylesheet" href="style.css">
 &lt;/head>
 </pre></code>
-                    <p>De flesta webbsidorna du besöker använder liknande taggar och brukar ofta vara med i färdiga html
-                        mallar.</p>
+                    <p>De flesta webbsidorna du besöker använder liknande taggar och brukar ofta vara med i färdiga html mallar. Dessa taggar ändrar gör inte mycket visuellt för webbplatsen utan fungerar som sagt mer som information om sidan.</p>
                 </div>
-                <h2>BODY</h2>
+                <h2>Semantic Elements</h2>
                 <p>Body elementet kommer innehålla majoriteten utav sidans innehåll men det kommer vara uppdelat i flera
                     mindre sektioner. Dessa sektioner kallas för “Semantic elements” och de är ofta väldigt tydliga med
                     vad de ska innehålla. Några exempel på dessa element är header, nav, article och footer. Med hjälp
                     utav dessa kommer vi få grundstrukturen i vår html kod.</p>
-                <figure>
-                    <img src="" alt="bodyKod">
-                    <figcaption>Bild på body koden.</figcaption>
-                </figure>
-                <p>Semantic elements är också väldigt viktiga för sökmotorer då datorn lättare kan förstå innehållet på
-                    webbsidan. Det blir väldigt viktigt när man börjar fokusera på SEO (Search Engine Optimization).</p>
+<pre><code>&lt;body>
+    &lt;header>
+        &lt;nav>
+        &lt;/nav>
+    &lt;/header>
+    &lt;main>
+        &lt;article>
+        &lt;/article>
+    &lt;/main>
+    &lt;footer>
+        &lt;address>
+        &lt;/address>
+    &lt;/footer>
+&lt;/body>
+</pre></code>
+                <p>Dessa element kommer inte synas direkt på webbsidan förrän du faktiskt börjar lägga till riktigt innehåll. De är viktiga för att sidan ska få sin struktur men också för  sökmotorer då datorn lättare kan förstå innehållet på webbsidan. Detta blir väldigt viktigt när man börjar fokusera på SEO (Search Engine Optimization).</p>
                 <div class="htmlBlock">
-                    <p>När vi väl har detta på plats kommer vi börja fylla dessa taggar med vårt innehåll. Detta kommer
-                        vi göra med hjälp utav mindre taggar t.ex. h1-h5, p, li etc. Dessa använder vi för att få in
-                        alla titlar, brödtext och listor.</p>
-                    <figure>
-                        <img src="" alt="titlarKod">
-                        <figcaption>Bild på struktur med titlar</figcaption>
-                    </figure>
+                    <h2>Innehåll</h2>
+                    <p>När vi väl har detta på plats kommer vi börja fylla dessa taggar med vårt innehåll. Detta kommer vi göra med hjälp utav mindre taggar t.ex. h1-h5 för titlar, p för paragrafer och li för listor etc.</p>
+<pre><code>&lt;h2>Innehåll&lt;/h2>
+    &lt;p>När vi väl har detta på plats kommer vi börja fylla dessa taggar med vårt innehåll. 
+    Detta kommer vi göra med hjälp utav mindre taggar t.ex. h1-h5 för titlar, 
+    p för paragrafer och li för listor etc.&lt;/p>
+</pre></code>
                 </div>
+                <h2>Footer</h2>
+                <p>I footer elementet brukar man ofta se länkar för social media, info om företaget, copyright information etc. Man kan också ha som en form av sitemap för webbplatsen med länkar till de sidorna. Vi har valt att lägga in adressen till vårt “företag”.</p>
+<pre><code>&lt;footer id="htmlFärg">
+    &lt;address>
+        Fend18 Projektarbete Grupp 10&lt;br>
+        Samir Blom&lt;br>
+        Folke Wibom&lt;br>
+        Karl Berglöf&lt;br>
+        Tomtebodavägen 3a&lt;br>
+        171 61 Solna
+    &lt;/address>
+&lt;/footer>
+</pre></code>
             </article>
             <footer id="htmlFärg">
                 <address>
