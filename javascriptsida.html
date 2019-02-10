@@ -102,10 +102,10 @@
 
                     <pre><code>
                         //tagg utan länk
-                        &lt;script&lt;/script&gt;
+                        &lt;script> &lt;/script>
 
                         //script tag med länk till separat JS fil. 
-                        &lt;script src=”script.js”&gt;&lt;/script&gt;
+                        &lt;script src=”script.js”>&lt;/script>
                     </pre></code>
 
                 </div>
@@ -143,34 +143,64 @@
                         När en webbsida öppnas så skapar webbläsaren ett Document Object Model av sidan. DOM skapar då
                         objekt av alla element som du kan manipulera med JS genom att anropa dem i din kod.
 
-                        <strong>let rubrik = document.getElementByID(“domExample”);</strong>
-                        Tex, hade huvudrubriken på denna sida haft id=domExample. Hade vi hämtat rubriken.
                     </p>
+
+                    <pre><code>
+                            //Hade hade huvudrubriken på denna sida haft id=domExample. Hade vi hämtat elementet såhär:
+                            let rubrik = document.getElementByID(“domExample”);
+                    </pre></code>   
+    
+
                     <p>
                         <h3> Egenskaper </h3>
+                        Dessa objekt har olika egenskaper och attributet du kan hämta genom att lägga till olika metoder.
                         Vill vi bara hämta texten elementet innehåller. Hade vi kunnat använda oss av en egenskap i DOM
-                        som heter innerHTML. Variabeln hade då skrivits:
-                        <strong> let rubrik = document.getElementByID(“domExample”).innerHTML;</strong> <br>
-                        Snutt på ett exempel som visar hur man tar rubrikens innehåll och lägger det värdet i en
-                        paragraf.
-
+                        som heter innerHTML.
                     </p>
+ 
+                    <pre><code>
+                            //Vill vi enbart hämta texten, hade vi deklarerat variabeln såhär:
+                            let rubrik = document.getElementByID(“domExample”).innerHTML;
+
+                            //vill vi ge domExamples värde till en annan rubrik med id=domCopy gör vi såhär:
+                            document.getElementById('domCopy').innerHTMl = rubrik;
+                    </pre></code>
                 </div>
                 <div>
                     <a id="funktionerlink"></a>
                     <h2>Funktioner</h2>
                     <p>
                         En javascript funktion är en kodsnutt skapad för att utföra en specifik uppgift. Funktioner
-                        exekveras när någonting anropar dem. *Exempel kod som visar hur man deklarerar en funktion och
-                        ett exempel.*
+                        exekveras när någonting anropar dem. 
+                    </p>
+
+                    <pre><code>
+                        //Funktion som ändrar ett HTML attribut till hello world
+
+                        function myFunction(){
+                        let x = "hello world";
+                        document.getElementById('header').innerHTML = x;    
+                        }
+
+                    </pre></code>
+
                         <h3> Events </h3>
+                        <p> 
                         I denna tutorial exekverar vi våra funktionerna genom javascript events. Vi använder oss av tre
                         olika versioner av dessa: onmouseenter(exekverar funktionen genom att ha hovra över ett element
-                        ), onmouseleave(triggar funktionen när man slutar hovra över ett element) som hör ihop och
-                        onkeyup (exekverar funktionen när man har markerat ett inputfält) *Exempel, onmouseenter,
-                        onmouseleave*
+                        ), onmouseleave(triggar funktionen när man slutar hovra över ett element) och
+                        onkeyup (exekverar funktionen när man har markerat ett inputfält).
+                        </p>
 
-                    </p>
+                        <pre><code>
+                                //Exekverar funktionen när man hovrar med musen över rubriken
+                                &lt;body>
+                                &lt;h1 id="header" onmouseenter="myFunction()">
+                                Sidans huvudrubrik
+                                &lt;/h1>
+
+                                &lt;/body>
+                        </pre></code>
                 </div>
                 <div class="javascriptBlock">
                     <a id="arrayerlink"></a>
@@ -182,9 +212,26 @@
                         enkelt vill hämta dem. Arrayer kan skrivas på många olika sätt beroende på dess syfte, de
                         har också många användbara metoder.
                         Vi behöver inte gå in detta så djupt då vi enbart använt dessa inom ett användningsområde.
-                        <strong>*kodsnutt gå igenom en array som innehåller ett par variabler, skriv ut ett av arrayens
-                            index*</strong>
+                        
                     </p>
+
+                    <pre><code>
+                        //funktion som innehåller tre variabler med olika värden
+                        function myFunction(){
+                            let x = 10;
+                            let y = 15;
+                            let z = 20;
+                        //Lägger dessa värden i en Array
+                            let numberArr = [x, y, z]
+
+                        //vill vi hämta ett värde från arrayen gör vi det med variabelns index,
+                        index startar alltid från 0. Här under hämtar vi variabeln x.
+                        
+                        return numberArr[0];
+                        }
+    
+                    </pre></code>
+
                 </div>
                 <div>
                     <a id="looparlink"></a>
@@ -198,6 +245,30 @@
                         <strong> *kodsnutt på en for-loop som loopar igenom en array och bryts när ett visst index
                             möts.* </strong>
                     </p>
+
+                    <pre><code>
+                            function myFunction(){
+                                let x = 10;
+                                let y = 15;
+                                let z = 20;
+                                let numberArr = [x, y, z]
+                            //for-loopen har tre påståenden.
+                            1- let i=0; detta ger loopen ett indexvärde som börjar på 0;
+                            2- 1 < numberArr.length; här jämför den loopens indexvärde med variablerna i arrayen
+                            3- i++; här plussar den på loopens index ifall loopen inte bryts på ett index och fortsätter.
+
+                            for(let i = 0; i < numberArr.length; i++){
+                              
+                            // nedan har vi satt en jämförelse. Om en av variablerna i numberArr arrayen är 20, kommer loopen brytas
+                            och returnera variabeln i arrayen som innehåller 20. I detta fall numberArr[2].    
+
+                            if(numberArr[i] == 20){
+                            return numberArr[i];    
+                            }   
+                            }
+        
+                        </pre></code>
+
                 </div>
                 <div class="javascriptBlock">
                     <a id="navigationsbarlink"></a>
@@ -208,6 +279,8 @@
                         som vi sedan lagt en metod .classlist.toggle(“show”) som lägger till klassen “show”. Show är en
                         CSS klass vi skapat som gör att listan syns. Utan denna klass göms html Elementet.
                     </p>
+
+
                     <p>
                         För att bara en av dropdown listorna ska kunna vara öppen åt gången. Har vi deklarerat ut tre
                         variabler som innehåller de andra listorna. Vi har lagt dessa inuti en array som vi loopar
@@ -215,17 +288,62 @@
                         stänger då de andra eventuella öppna listorna.
                     </p>
 
+                    <pre><code>
+
+                            // Öppnar Dropdown listorna och stänger andra öppnade
+                            function dropDownFuncHtml() {
+                              document.getElementById("myDropdownHTML").classList.toggle("show");
+                            
+                              let dropCss = document.getElementById("myDropdownCSS");
+                              let dropJs = document.getElementById("myDropdownJS");
+                              let dropPs = document.getElementById("myDropdownPS");
+                              let dropArr = [dropCss, dropJs, dropPs];
+                              for (let i = 0; i < dropArr.length; i++) {
+                                let closeDrop = dropArr[i];
+                                if (closeDrop.classList.toggle("show")) {
+                                  closeDrop.classList.remove('show');
+                                }
+                              }
+                            }  
+
+                    </pre></code>
+
                     <p>
                         Denna funktion är i princip samma sak som den undre delen av den tidigare funktionen.
                         Den använder vi för att stänga alla öppna listor.
 
                     </p>
+
+                    <pre><code>
+
+                            function closeDropDown() {
+                                let dropdowns = document.getElementsByClassName("dropdown-content");
+                              
+                                for (let i = 0; i < dropdowns.length; i++) {
+                                  let openDropdown = dropdowns[i];
+                                  if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                  }
+                                }
+                              } 
+
+                    </pre></code>
+
                     <h3>Steg 2 - Exekvera funktionerna</h3>
                     <p>
                         För att exekvera funktionerna har vi lagt ut events i html sidan. Här är divisionen som
                         innehåller html knappen. På knappen ligger eventet onmouseenter. På själva listan har vi eventet
                         onmouseleave som exekverar closeDropDown funktionen när man drar musen ifrån själva listan.
                     </p>
+
+                    <pre><code>
+
+                            &lt;div class="searchField">
+                            &lt;input id="inputSearch" type="text" placeholder="Search" onkeyup="searchFunction()">
+                            &lt;button class="searchbutton"><a id="searchBtn" href="">Search</a></button>
+                            &lt;/div>
+
+                    </pre></code>
 
 
 
@@ -243,12 +361,47 @@
                         Vi loopar igenom arrayen och kollar ifall inputsearch variabeln matchar någon av länkarnas id.
                         Om värdet finns kommer a-taggen inuti sökknappens href attributet ändras till samma som länkens.
                     </p>
+
+                    <pre><code>
+                            /*Funktion som triggas när man är i inputfältet med id inputSearch*/
+                            function searchFunction() {
+                              /*Sparar texten man skrivit i inputfältet i en variabel*/
+                              let inputSearch = document.getElementById('inputSearch').value;
+                              /* Array med med a-taggarna i listan*/
+                              let arr = [document.getElementById('start'), document.getElementById('html'), document.getElementById('css'),
+                              document.getElementById('javascript'), document.getElementById('photoshop'), document.getElementById('script-taggen'),
+                               document.getElementById('variabler'), document.getElementById('dom'), document.getElementById('funktioner'),
+                                document.getElementById('loopar'), document.getElementById('navigationsbar'), document.getElementById('sökfält'),
+                                 document.getElementById('arrayer')];
+                              /*Loopar igenom arrayen för att se om inputSearch variabeln matchar något index i arrayen */
+                              for (let i = 0; i < arr.length; i++) {
+                            
+                                /*Om de matchar ska länkens href attributet kopieras över till sökknappens href attribut*/
+                                 if (inputSearch == arr[i].id) {
+                                  let link = arr[i];
+                                  document.getElementById('searchBtn').href = link;
+                                }
+                              }
+                            }
+
+                    </pre></code>
+
                     <h3>steg 2 - exekvera funktionen</h3>
                     <p>
                         Återigen triggar vi funktionen med events. Denna gång med onkeyup, den gör så att så snart du
                         trycker på sökfältet så exekveras funktionen, så när du skriver något i den jämför den värdet
                         med vad som finns i arrayen.
                     </p>
+
+                    <pre><code>
+
+                            &lt;div class="dropDownHTML">
+                            &lt;button onmouseenter="dropDownFuncHtml()" class="dropbtn">HTML</button>
+                            &lt;div id="myDropdownHTML" class="dropdown-content" onmouseleave="closeDropDown()">
+                            &lt;a id="html" href="htmlsida.html">HTML</a> 
+
+                    </pre></code>
+
                 </div>
 
             </article>
