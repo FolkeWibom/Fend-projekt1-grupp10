@@ -33,8 +33,12 @@
                         <button onmouseenter="dropDownfuncCSS()" class="dropbtn">CSS</button>
                         <div id="myDropdownCSS" class="dropdown-content" onmouseleave="closeDropDown()">
                             <a id="css" href="csssida.html">CSS</a>
-                            <a href="csssida.html">column CSS 2</a>
-                            <a href="#">column CSS 3</a>
+                            <a href="csssida.html#selektorerLink" id="selektorer">Selektorer</a>
+                            <a href="csssida.html#stylingLink" id="styling">Styling</a>
+                            <a href="csssida.html#boxmodellenLink" id="boxmodellen">Boxmodellen</a>
+                            <a href="csssida.html#positionLink" id="position">Position</a>
+                            <a href="csssida.html#positioneringLink" id="positionering">Positionering</a>
+
                         </div>
                     </div>
                 </li>
@@ -77,12 +81,109 @@
                     webbsidan sin färg och form. Här kommer vi visa lite på hur vi strukturerar vår CSS kod samt hur
                     koden förvandlar ett annars tråkigt html dokument till något lite roligare.</p>
                 <div class="cssBlock">
-                    <p>Här går vi igenom hur man gör en webbplats inom kategorierna HTML, CSS, Javascript och Photoshop.
-                        Alla exempel vi visar är baserade på hur vi gjort på den här webbplatsen steg för steg.</p>
-                    <figure>
-                        <img src="" alt="cssKod">
-                        <figcaption>Bild på länk till CSS fil.</figcaption>
-                    </figure>
+                    <a id="selektorerLink"></a>
+                    <h2>Selektorer</h2>
+                    <h3>Inline</h3>
+                    <p>CSS går att skriva direkt i html dokumentet antingen under < style > taggen eller inom den taggen du arbetar med genom så kallad inline CSS. Vi använder oss utav ett separat dokument som vi länkar till i vår head element. Detta underlättar då vi kommer använda samma CSS kod för att styla alla våra html sidor.</p>
+                    <p>Först och främst måste vi se till att vi lägger till css på rätt HTML element. Man kan då använda sig utav inline css men för större projekt är det rekommenderat att man istället kallar på elementen inuti ett CSS dokument.</p>
+                    <p>För att kalla på ett element i css behöver man bara skriva in vilket element du vill justera och därefter ett par klamrar därefter som du deklarerar din ändringar.</p>
+                    <pre><code>
+                            &lt;head>
+                                &lt;meta charset="UTF-8">
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                &lt;meta http-equiv="X-UA-Compatible" content="ie=edge">
+                                &lt;title>Exampel&lt;/title>
+                            &lt;/head>
+                            &lt;style> &lt;/style
+                    </code></pre>
+                    <h3>ID och class</h3>
+                    <p>Säg då att du inte vill ändra på alla din paragrafer (< p>) när du skriver din CSS utan vill endast ändra på en rad text. För att göra detta kan vi använda oss utav ID och class attribut. Med dessa kan man lätt kalla på individuella element i din HTML kod. För enstaka element rekommenderas det att du använder dig utav ID och för en grupp element rekommenderas det att du använder utav class. För att ge ett HTML element ett ID eller en klass skriver du bara in class=”[Namn]” eller id=”[Namn]” inom elementets klamrar när du skapar den.</p>
+                    <p>När du sedan vill kalla på ett element med en ID eller class så skriver du in klassen eller id:ts namn med ett # framför id:t och en punkt (.) framför klasser och ett par klamrar efter det.</p>
+                    <pre><code>
+                            &lt;head>
+                                &lt;meta charset="UTF-8">
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                &lt;meta http-equiv="X-UA-Compatible" content="ie=edge">
+                                &lt;title>Exampel&lt;/title>
+                            &lt;/head>
+                            &lt;style> 
+                            &lt;.classEX{}
+                            &lt;#idEX{}
+                            &lt;/style
+                            
+                            &lt;div class="classEX">
+                                &lt;div id="idEX">
+                                &lt;/div>
+                            &lt;/div>
+                    </code></pre>
+                </div>
+                <div>
+                    <h2>Styling</h2>
+                    <a id="stylingLink"></a>
+                    <p>Det finns flera olika värden man kan använda för att justera olika element i HTML med hjälp av CSS. Majoriteten av dessa har inte så jättestor betydelse på hela hemsidan förutom utseende så vi kommer snabbt gå igenom några attribut som användes för att bygga denna hemsida.</p>
+                    <pre><code>
+                        .classEX{
+                            Background-color:black;
+                            font-family:"comic sans";
+                            width: 50%;
+                            height: 50%;
+                            border: 1px;
+
+                        }
+                    </code></pre>
+                </div>
+                <div class="cssBlock">
+                    <h2>Boxmodellen</h2>
+                    <a id="boxmodellenLink"></a>
+                    <p>Den så kallade boxmodellen är term som används när man pratar om en sidas layout och design. Vad det innebär är att alla HTML element ligger i en “box” som täcker hela elementet. Vårt element täcks först av padding, därefter en border som går runt elementet och paddingen och därefter margin som ser till att det finns tom plats run allting.</p>
+                    <img src="Images/Box-modellen-exempelbild.png" alt="Boxbild">
+                </div>
+                <div>
+                    <h2>Position</h2>
+                    <a id="positionLink"></a>
+                    <p>Även om det låter som det så bestämmer inte position vart element ska ligga på en hemsida. Istället så bestämmer position hur ett element anpassar sig efter HTML:ens flow. Flow innebär vart någonstans i koden ett element ligger. Som exempel kan vi använda oss utav denna sidas header. Headern har en sticky position vilket innebär att oavsett hur långt ner du scrollar kommer headern stanna kvar på sidans topp.</p>
+                    <pre><code>
+                        header{
+                        display: grid;
+                        position: -webkit-sticky;
+                        position: sticky;
+                        top: 0;
+                        font-family: 'Ubuntu Condensed', sans-serif;
+                        }
+                    </code></pre>
+                </div>
+                <div class="cssBlock">
+                    <h2>Positionering</h2>
+                    <a id="positioneringLink"></a>
+                    <p>Det finns flera olika sätt att bestämma vart någonstans ett element ska ligga på din hemsida.</p>
+                    <h3>Float</h3>
+                    <p>Float är ett äldre attribut som man använder sig av för att positionera ett element utanför  dokumentets flow. Om ett element har attributet float: left så kommer elementet då att flytta sig till hemsidans vänstra sida och flytta på alla andra element så att det får plats just där.</p>
+                    <h3>Flexbox</h3>
+                    <p>Flexbox är ett annat lite modernare sätt att positionera ett element. Just denna metod använder sig av boxmodellen och där alla element radas upp efter varandra i en designerad flex-container.</p>
+                    <h3>Grid</h3>
+                    <p>Sist men inte minst så har vi grid. Man kan beskriva denna metod som att placera dina element i ett rutnät. Man börjar först att skapa en grid-container. Alla element som skapas innanför denna container kommer att omvandlas till ett grid-element som placeras inom containerns rutnät i den ordning som de skapades i. För att sedan bestämma vart grid-elementen ska ligga ändrar vi på mellanrummet mellan elementen. Det horisontella mellanrummet kallas för grid-row medans det vertikala kallas för grid-column.</p>
+                    <p>Genom att använda sig utav attributen grid-column-gap och grid-row-gap kan vi bestämma hur mycket mellanrum det ska vara mellan de olika elementen i rutnätet. Man kan också bestämma hur mycket plats ett grid element kan ta upp i rutnätet genom grid-column/row-start och grid-column/row-end.</p>
+                    <p>Om vi har vill att en av våra element ska ta mer plats än de andra i en grid container kan vi sätta elementets början genom grid-column/row-start och därefter hur mycket plats det elementet ska ta upp genom grid-column/row-end.</p>
+                    <pre><code>
+                            header{
+                                display: grid;
+                                position: -webkit-sticky;
+                                position: sticky;
+                                top: 0;
+                                font-family: 'Ubuntu Condensed', sans-serif;
+                                }
+                            .ikon{
+                                grid-column-start: 1;
+                                }
+                            .navbar ul{
+                                padding: 0;
+                                margin: 0;
+                                grid-column: 3 / span 2;
+                                }
+                            .searchField{
+                                grid-column-start: 5;
+                                }
+                    </code></pre>
                 </div>
             </article>
             <footer id="cssFärg">
