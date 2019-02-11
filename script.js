@@ -88,7 +88,9 @@ function searchFunction() {
      document.getElementById('arrayer'), document.getElementById('intro'), document.getElementById('head'),
       document.getElementById('header'),document.getElementById('semanticElements'), document.getElementById('innehåll'),
       document.getElementById('footer'), document.getElementById('summering'), document.getElementById('bildoptimering'),
-      document.getElementById('kvalitet'), document.getElementById('storlek'), document.getElementById('filtyper')];
+      document.getElementById('kvalitet'), document.getElementById('storlek'), document.getElementById('filtyper'),
+       document.getElementById('selektorer'), document.getElementById('styling'), document.getElementById('boxmodellen'),
+        document.getElementById('position'), document.getElementById('positionering')];
   /*Loopar igenom arrayen för att se om inputSearch variabeln matchar något index i arrayen */
   for (let i = 0; i < arr.length; i++) {
 
@@ -99,5 +101,4 @@ function searchFunction() {
     }
   }
 }
-
 
