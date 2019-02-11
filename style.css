@@ -171,10 +171,17 @@ background-color: rgba(93, 92, 91, 0.13);
 padding: 2px;
 }
 
+.indexBlock p{
+  margin-bottom: 20px;
+}
+
 .htmlBlock{
 background-color: rgba(223, 65, 2, 0.075);
 padding: 2px;
+}
 
+.htmlBlock p{
+  margin-bottom: 20px;
 }
 
 .cssBlock{
@@ -183,16 +190,26 @@ padding: 2px;
 
 }
 
+.cssBlock p{
+  margin-bottom: 20px;
+}
+
 .javascriptBlock{
 background-color: rgba(255, 253, 140, 0.479);
 padding: 2px;
+}
 
+.javascriptBlock p{
+  margin-bottom: 20px;
 }
 
 .photoshopBlock{
 background-color: rgba(129, 173, 255, 0.151);
 padding: 2px;
+}
 
+.regBlock p{
+margin-bottom: 20px;
 }
 
 
