@@ -12,7 +12,7 @@
 
 <body>
     <div class="container">
-        <header class="navbar" id="cssFärg">
+        <header class="navbar" id="cssFärg" onmouseleave="closeDropDown()">
             <div class="ikon">
                 <img src="Images/logo.svg" alt="ikon">
             </div>
@@ -23,8 +23,13 @@
                         <button onmouseenter="dropDownFuncHtml()" class="dropbtn">HTML</button>
                         <div id="myDropdownHTML" class="dropdown-content" onmouseleave="closeDropDown()">
                             <a id="html" href="htmlsida.html">HTML</a>
-                            <a href="#">column HTML 2</a>
-                            <a href="#">column HTML 3</a>
+                            <a href="htmlsida.html#introLink" id="intro">Intro</a>
+                            <a href="htmlsida.html#headLink" id="head">Head</a>
+                            <a href="htmlsida.html#headerLink" id="header">Header</a>
+                            <a href="htmlsida.html#semanticElementsLink" id="semanticElements">Semantic Elements</a>
+                            <a href="htmlsida.html#innehållLink" id="innehåll">Innehåll</a>
+                            <a href="htmlsida.html#footerLink" id="footer">Footer</a>
+                            <a href="htmlsida.html#summeringLink" id="summering">Summering</a>
                         </div>
                     </div>
                 </li>
@@ -42,15 +47,15 @@
                     <div class="dropDownJS">
                         <button onmouseenter="dropDownfuncJS()" class="dropbtn">Javascript</button>
                         <div id="myDropdownJS" class="dropdown-content" onmouseleave="closeDropDown()">
-                                <a id="javascript" href="javascriptsida.html">Javascript</a>
-                                <a href="javascriptsida.html#script-taggenlink" id="script-taggen">Script-taggen</a>
-                                <a href="javascriptsida.html#variablerlink" id="variabler">Variabler</a>
-                                <a href="javascriptsida.html#DOMlink" id="dom">DOM</a>
-                                <a href="javascriptsida.html#funktionerlink" id="funktioner">Funktioner</a>
-                                <a href="javascriptsida.html#arrayerlink" id="arrayer">Arrayer</a>
-                                <a href="javascriptsida.html#looparlink" id="loopar">Loopar</a>
-                                <a href="javascriptsida.html#navigationsbarlink" id="navigationsbar">Navigationsbar</a>
-                                <a href="javascriptsida.html#sökfältlink" id="sökfält">Sökfält</a>
+                            <a id="javascript" href="javascriptsida.html">Javascript</a>
+                            <a href="javascriptsida.html#script-taggenlink" id="script-taggen">Script-taggen</a>
+                            <a href="javascriptsida.html#variablerlink" id="variabler">Variabler</a>
+                            <a href="javascriptsida.html#DOMlink" id="dom">DOM</a>
+                            <a href="javascriptsida.html#funktionerlink" id="funktioner">Funktioner</a>
+                            <a href="javascriptsida.html#arrayerlink" id="arrayer">Arrayer</a>
+                            <a href="javascriptsida.html#looparlink" id="loopar">Loopar</a>
+                            <a href="javascriptsida.html#navigationsbarlink" id="navigationsbar">Navigationsbar</a>
+                            <a href="javascriptsida.html#sökfältlink" id="sökfält">Sökfält</a>
                         </div>
                     </div>
                 </li>
@@ -59,8 +64,10 @@
                         <button onmouseenter="dropDownfuncPS()" class="dropbtn">Photoshop</button>
                         <div id="myDropdownPS" class="dropdown-content" onmouseleave="closeDropDown()">
                             <a id="photoshop" href="photoshopsida.html">Photoshop</a>
-                            <a href="#">column PS 2</a>
-                            <a href="#">column PS 3</a>
+                            <a href="photoshopsida.html#bildoptimeringLink" id="bildoptimering">Bildoptimering</a>
+                            <a href="photoshopsida.html#kvalitetLink" id="kvalitet">Kvalitet</a>
+                            <a href="photoshopsida.html#storlekLink" id="storlek">Storlek</a>
+                            <a href="photoshopsida.html#filtyperLink" id="filtyper">Filtyp</a>
                         </div>
                     </div>
                 </li>

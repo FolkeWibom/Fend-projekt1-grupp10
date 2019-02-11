@@ -85,7 +85,10 @@ function searchFunction() {
   document.getElementById('javascript'), document.getElementById('photoshop'), document.getElementById('script-taggen'),
    document.getElementById('variabler'), document.getElementById('dom'), document.getElementById('funktioner'),
     document.getElementById('loopar'), document.getElementById('navigationsbar'), document.getElementById('sökfält'),
-     document.getElementById('arrayer')];
+     document.getElementById('arrayer'), document.getElementById('intro'), document.getElementById('head'),
+      document.getElementById('header'),document.getElementById('semanticElements'), document.getElementById('innehåll'),
+      document.getElementById('footer'), document.getElementById('summering'), document.getElementById('bildoptimering'),
+      document.getElementById('kvalitet'), document.getElementById('storlek'), document.getElementById('filtyper')];
   /*Loopar igenom arrayen för att se om inputSearch variabeln matchar något index i arrayen */
   for (let i = 0; i < arr.length; i++) {
 
@@ -96,4 +99,5 @@ function searchFunction() {
     }
   }
 }
+
 

@@ -12,7 +12,7 @@
 
 <body>
     <div class="container">
-        <header class="navbar" id="htmlFärg">
+        <header class="navbar" id="htmlFärg" onmouseleave="closeDropDown()">
             <div class="ikon">
                 <img src="Images/logo.svg" alt="ikon">
             </div>
@@ -47,15 +47,15 @@
                     <div class="dropDownJS">
                         <button onmouseenter="dropDownfuncJS()" class="dropbtn">Javascript</button>
                         <div id="myDropdownJS" class="dropdown-content" onmouseleave="closeDropDown()">
-                                <a id="javascript" href="javascriptsida.html">Javascript</a>
-                                <a href="javascriptsida.html#script-taggenlink" id="script-taggen">Script-taggen</a>
-                                <a href="javascriptsida.html#variablerlink" id="variabler">Variabler</a>
-                                <a href="javascriptsida.html#DOMlink" id="dom">DOM</a>
-                                <a href="javascriptsida.html#funktionerlink" id="funktioner">Funktioner</a>
-                                <a href="javascriptsida.html#arrayerlink" id="arrayer">Arrayer</a>
-                                <a href="javascriptsida.html#looparlink" id="loopar">Loopar</a>
-                                <a href="javascriptsida.html#navigationsbarlink" id="navigationsbar">Navigationsbar</a>
-                                <a href="javascriptsida.html#sökfältlink" id="sökfält">Sökfält</a>
+                            <a id="javascript" href="javascriptsida.html">Javascript</a>
+                            <a href="javascriptsida.html#script-taggenlink" id="script-taggen">Script-taggen</a>
+                            <a href="javascriptsida.html#variablerlink" id="variabler">Variabler</a>
+                            <a href="javascriptsida.html#DOMlink" id="dom">DOM</a>
+                            <a href="javascriptsida.html#funktionerlink" id="funktioner">Funktioner</a>
+                            <a href="javascriptsida.html#arrayerlink" id="arrayer">Arrayer</a>
+                            <a href="javascriptsida.html#looparlink" id="loopar">Loopar</a>
+                            <a href="javascriptsida.html#navigationsbarlink" id="navigationsbar">Navigationsbar</a>
+                            <a href="javascriptsida.html#sökfältlink" id="sökfält">Sökfält</a>
                         </div>
                     </div>
                 </li>
@@ -64,8 +64,10 @@
                         <button onmouseenter="dropDownfuncPS()" class="dropbtn">Photoshop</button>
                         <div id="myDropdownPS" class="dropdown-content" onmouseleave="closeDropDown()">
                             <a id="photoshop" href="photoshopsida.html">Photoshop</a>
-                            <a href="#">column PS 2</a>
-                            <a href="#">column PS 3</a>
+                            <a href="photoshopsida.html#bildoptimeringLink" id="bildoptimering">Bildoptimering</a>
+                            <a href="photoshopsida.html#kvalitetLink" id="kvalitet">Kvalitet</a>
+                            <a href="photoshopsida.html#storlekLink" id="storlek">Storlek</a>
+                            <a href="photoshopsida.html#filtyperLink" id="filtyper">Filtyp</a>
                         </div>
                     </div>
                 </li>
@@ -77,19 +79,25 @@
         </header>
         <main>
             <article>
-                <h1>HTML</h1>
-                <a id="introLink"></a>
-                <h2>Intro</h2>
-                <p>Varje hemsida är uppbyggd med någon form av html kod som bas, utan detta får man ingen struktur på
-                    hemsidan och dess innehåll. Här kommer vi gå igenom hur vi byggt upp webbsidan du är inne på och vad
-                    varje del av koden gör.</p>
+
+                <div class="regBlock">
+                    <h1>HTML</h1>
+                    <a id="introLink"></a>
+                    <h2>Intro</h2>
+                    <p>Varje hemsida är uppbyggd med någon form av html kod som bas, utan detta får man ingen struktur
+                        på
+                        hemsidan och dess innehåll. Här kommer vi gå igenom hur vi byggt upp webbsidan du är inne på och
+                        vad
+                        varje del av koden gör.</p>
+                </div>
+
                 <div class="htmlBlock">
                     <a id="headLink"></a>
                     <h2>Head</h2>
                     <p>Vi börjar med head elementet. Detta element innehåller information om dokumentet t.ex. titeln på
                         webbsidan, vilket språk sidan är skriven på samt länkar till eventuella CSS och Javascript filer
                         som används. Såhär ser vår grundstruktur ut för head taggen.</p>
-<pre><code>&lt;head>
+                    <pre><code>&lt;head>
     &lt;meta charset="UTF-8">
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
     &lt;meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -98,17 +106,29 @@
     &lt;link rel="stylesheet" href="style.css">
 &lt;/head>
 </pre></code>
-                    <p>De flesta webbsidorna du besöker använder liknande taggar och brukar ofta vara med i färdiga html mallar. Dessa taggar ändrar gör inte mycket visuellt för webbplatsen utan fungerar som sagt mer som information om sidan.</p>
+                    <p>De flesta webbsidorna du besöker använder liknande taggar och brukar ofta vara med i färdiga html
+                        mallar. Dessa taggar ändrar gör inte mycket visuellt för webbplatsen utan fungerar som sagt mer
+                        som information om sidan.</p>
                 </div>
-                <a id="headerLink"></a>
-                <h2>Header</h2>
-                <p>I headern har vi vår ikon, drop-down meny samt sökfält. Då sökfältet kräver en del javascript kommer vi gå in djupare på detta i javascript delen av vår guide. Ikonen är placerad med en simpel img tag inom en div tag och är senare justerad vidare (storlek, position mm) med css.</p>
-<pre><code>&lt;div class="ikon">
+
+                <div class="regBlock">
+                    <a id="headerLink"></a>
+                    <h2>Header</h2>
+                    <p>I headern har vi vår ikon, drop-down meny samt sökfält. Då sökfältet kräver en del javascript
+                        kommer
+                        vi gå in djupare på detta i javascript delen av vår guide. Ikonen är placerad med en simpel img
+                        tag
+                        inom en div tag och är senare justerad vidare (storlek, position mm) med css.</p>
+                    <pre><code>&lt;div class="ikon">
         &lt;img src="Images/logo.svg" alt="ikon">
 &lt;/div>
 </pre></code>
-                <p>Vår drop-down meny är skapad med en blandning utav javascript, css och html. Här nedan kan du se hur html strukturen ser ut för en del av menyn. Varje a element länkar till varsin titel på sidan med hjälp utav separata id:n.</p>
-<pre><code>&lt;div class="dropDownHTML">
+                    <p>Vår drop-down meny är skapad med en blandning utav javascript, css och html. Här nedan kan du se
+                        hur
+                        html strukturen ser ut för en del av menyn. Varje a element länkar till varsin titel på sidan
+                        med
+                        hjälp utav separata id:n.</p>
+                    <pre><code>&lt;div class="dropDownHTML">
     &lt;button onmouseenter="dropDownFuncHtml()" class="dropbtn">HTML&lt;/button>
     &lt;div id="myDropdownHTML" class="dropdown-content" onmouseleave="closeDropDown()">
         &lt;a id="html" href="htmlsida.html">HTML&lt;/a>
@@ -122,14 +142,18 @@
     &lt;/div>
 &lt;/div>
 </pre></code>
-            <div class="htmlBlock">
-                <a id="semanticElementsLink"></a>
-                <h2>Semantic Elements</h2>
-                <p>Body elementet kommer innehålla majoriteten utav sidans innehåll men det kommer vara uppdelat i flera
-                    mindre sektioner. Dessa sektioner kallas för “Semantic elements” och de är ofta väldigt tydliga med
-                    vad de ska innehålla. Några exempel på dessa element är header, nav, article och footer. Med hjälp
-                    utav dessa kommer vi få grundstrukturen i vår html kod.</p>
-<pre><code>&lt;body>
+                </div>
+                <div class="htmlBlock">
+                    <a id="semanticElementsLink"></a>
+                    <h2>Semantic Elements</h2>
+                    <p>Body elementet kommer innehålla majoriteten utav sidans innehåll men det kommer vara uppdelat i
+                        flera
+                        mindre sektioner. Dessa sektioner kallas för “Semantic elements” och de är ofta väldigt tydliga
+                        med
+                        vad de ska innehålla. Några exempel på dessa element är header, nav, article och footer. Med
+                        hjälp
+                        utav dessa kommer vi få grundstrukturen i vår html kod.</p>
+                    <pre><code>&lt;body>
     &lt;header>
         &lt;nav>
         &lt;/nav>
@@ -144,21 +168,32 @@
     &lt;/footer>
 &lt;/body>
 </pre></code>
-                <p>Dessa element kommer inte synas direkt på webbsidan förrän du faktiskt börjar lägga till riktigt innehåll. De är viktiga för att sidan ska få sin struktur men också för  sökmotorer då datorn lättare kan förstå innehållet på webbsidan. Detta blir väldigt viktigt när man börjar fokusera på SEO (Search Engine Optimization).</p>
-            </div>
+                    <p>Dessa element kommer inte synas direkt på webbsidan förrän du faktiskt börjar lägga till riktigt
+                        innehåll. De är viktiga för att sidan ska få sin struktur men också för sökmotorer då datorn
+                        lättare kan förstå innehållet på webbsidan. Detta blir väldigt viktigt när man börjar fokusera
+                        på SEO (Search Engine Optimization).</p>
+                </div>
+                <div class="regBlock">
                     <a id="innehållLink"></a>
                     <h2>Innehåll</h2>
-                    <p>När vi väl har detta på plats kommer vi börja fylla dessa taggar med vårt innehåll. Detta kommer vi göra med hjälp utav mindre taggar t.ex. h1-h5 för titlar, p för paragrafer och li för listor etc.</p>
-<pre><code>&lt;h2>Innehåll&lt;/h2>
+                    <p>När vi väl har detta på plats kommer vi börja fylla dessa taggar med vårt innehåll. Detta kommer
+                        vi
+                        göra med hjälp utav mindre taggar t.ex. h1-h5 för titlar, p för paragrafer och li för listor
+                        etc.
+                    </p>
+                    <pre><code>&lt;h2>Innehåll&lt;/h2>
     &lt;p>När vi väl har detta på plats kommer vi börja fylla dessa taggar med vårt innehåll. 
     Detta kommer vi göra med hjälp utav mindre taggar t.ex. h1-h5 för titlar, 
     p för paragrafer och li för listor etc.&lt;/p>
 </pre></code>
-            <div class="htmlBlock">
-                <a id="footerLink"></a>
-                <h2>Footer</h2>
-                <p>I footer elementet brukar man ofta se länkar för social media, info om företaget, copyright information etc. Man kan också ha som en form av sitemap för webbplatsen med länkar till de sidorna. Vi har valt att lägga in adressen till vårt “företag”.</p>
-<pre><code>&lt;footer id="htmlFärg">
+                </div>
+                <div class="htmlBlock">
+                    <a id="footerLink"></a>
+                    <h2>Footer</h2>
+                    <p>I footer elementet brukar man ofta se länkar för social media, info om företaget, copyright
+                        information etc. Man kan också ha som en form av sitemap för webbplatsen med länkar till de
+                        sidorna. Vi har valt att lägga in adressen till vårt “företag”.</p>
+                    <pre><code>&lt;footer id="htmlFärg">
     &lt;address>
         Fend18 Projektarbete Grupp 10&lt;br>
         Samir Blom&lt;br>
@@ -169,10 +204,18 @@
         &lt;/address>
         &lt;/footer>
     </pre></code>
-            </div>
-                <a id="summeringLink"></a>
-                <h2>Summering</h2>
-                <p>Nu har vi alla viktiga delar på plats för att få en väldigt simpel html grund. Det är lätt att bygga på detta med mer innehåll i form av flera article element, eventuella listor etc. I css delen kommer vi gå igenom hur man snyggar till webbplatsen med färg och form. Css filen kommer att använda sig utav de html taggar vi skapat nu för att förändra webbplatsen.</p>
+                </div>
+                <div class="regBlock">
+                    <a id="summeringLink"></a>
+                    <h2>Summering</h2>
+                    <p>Nu har vi alla viktiga delar på plats för att få en väldigt simpel html grund. Det är lätt att
+                        bygga
+                        på detta med mer innehåll i form av flera article element, eventuella listor etc. I css delen
+                        kommer
+                        vi gå igenom hur man snyggar till webbplatsen med färg och form. Css filen kommer att använda
+                        sig
+                        utav de html taggar vi skapat nu för att förändra webbplatsen.</p>
+                </div>
             </article>
             <footer id="htmlFärg">
                 <address>

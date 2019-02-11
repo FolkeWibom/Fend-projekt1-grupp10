@@ -23,8 +23,13 @@
                         <button onmouseenter="dropDownFuncHtml()" class="dropbtn">HTML</button>
                         <div id="myDropdownHTML" class="dropdown-content" onmouseleave="closeDropDown()">
                             <a id="html" href="htmlsida.html">HTML</a>
-                            <a href="#">column HTML 2</a>
-                            <a href="#">column HTML 3</a>
+                            <a href="htmlsida.html#introLink" id="intro">Intro</a>
+                            <a href="htmlsida.html#headLink" id="head">Head</a>
+                            <a href="htmlsida.html#headerLink" id="header">Header</a>
+                            <a href="htmlsida.html#semanticElementsLink" id="semanticElements">Semantic Elements</a>
+                            <a href="htmlsida.html#innehållLink" id="innehåll">Innehåll</a>
+                            <a href="htmlsida.html#footerLink" id="footer">Footer</a>
+                            <a href="htmlsida.html#summeringLink" id="summering">Summering</a>
                         </div>
                     </div>
                 </li>
@@ -59,8 +64,10 @@
                         <button onmouseenter="dropDownfuncPS()" class="dropbtn">Photoshop</button>
                         <div id="myDropdownPS" class="dropdown-content" onmouseleave="closeDropDown()">
                             <a id="photoshop" href="photoshopsida.html">Photoshop</a>
-                            <a href="#">column PS 2</a>
-                            <a href="#">column PS 3</a>
+                            <a href="photoshopsida.html#bildoptimeringLink" id="bildoptimering">Bildoptimering</a>
+                            <a href="photoshopsida.html#kvalitetLink" id="kvalitet">Kvalitet</a>
+                            <a href="photoshopsida.html#storlekLink" id="storlek">Storlek</a>
+                            <a href="photoshopsida.html#filtyperLink" id="filtyper">Filtyp</a>
                         </div>
                     </div>
                 </li>
@@ -72,7 +79,7 @@
         </header>
         <main>
             <article>
-                <div>
+                <div class="regBlock">
                     <h1>Javascript</h1>
                     <p>
 
@@ -109,7 +116,7 @@
                     </pre></code>
 
                 </div>
-                <div>
+                <div class="regBlock">
                     <a id="variablerlink"></a>
 
                     <h2>Variabler</h2>
@@ -148,16 +155,17 @@
                     <pre><code>
                             //Hade hade huvudrubriken på denna sida haft id=domExample. Hade vi hämtat elementet såhär:
                             let rubrik = document.getElementByID(“domExample”);
-                    </pre></code>   
-    
+                    </pre></code>
+
 
                     <p>
                         <h3> Egenskaper </h3>
-                        Dessa objekt har olika egenskaper och attributet du kan hämta genom att lägga till olika metoder.
+                        Dessa objekt har olika egenskaper och attributet du kan hämta genom att lägga till olika
+                        metoder.
                         Vill vi bara hämta texten elementet innehåller. Hade vi kunnat använda oss av en egenskap i DOM
                         som heter innerHTML.
                     </p>
- 
+
                     <pre><code>
                             //Vill vi enbart hämta texten, hade vi deklarerat variabeln såhär:
                             let rubrik = document.getElementByID(“domExample”).innerHTML;
@@ -166,12 +174,12 @@
                             document.getElementById('domCopy').innerHTMl = rubrik;
                     </pre></code>
                 </div>
-                <div>
+                <div class="regBlock">
                     <a id="funktionerlink"></a>
                     <h2>Funktioner</h2>
                     <p>
                         En javascript funktion är en kodsnutt skapad för att utföra en specifik uppgift. Funktioner
-                        exekveras när någonting anropar dem. 
+                        exekveras när någonting anropar dem.
                     </p>
 
                     <pre><code>
@@ -184,15 +192,15 @@
 
                     </pre></code>
 
-                        <h3> Events </h3>
-                        <p> 
+                    <h3> Events </h3>
+                    <p>
                         I denna tutorial exekverar vi våra funktionerna genom javascript events. Vi använder oss av tre
                         olika versioner av dessa: onmouseenter(exekverar funktionen genom att ha hovra över ett element
                         ), onmouseleave(triggar funktionen när man slutar hovra över ett element) och
                         onkeyup (exekverar funktionen när man har markerat ett inputfält).
-                        </p>
+                    </p>
 
-                        <pre><code>
+                    <pre><code>
                                 //Exekverar funktionen när man hovrar med musen över rubriken
                                 &lt;body>
                                 &lt;h1 id="header" onmouseenter="myFunction()">
@@ -212,7 +220,7 @@
                         enkelt vill hämta dem. Arrayer kan skrivas på många olika sätt beroende på dess syfte, de
                         har också många användbara metoder.
                         Vi behöver inte gå in detta så djupt då vi enbart använt dessa inom ett användningsområde.
-                        
+
                     </p>
 
                     <pre><code>
@@ -233,7 +241,7 @@
                     </pre></code>
 
                 </div>
-                <div>
+                <div class="regBlock">
                     <a id="looparlink"></a>
 
                     <h2>Loopar</h2>
@@ -348,10 +356,8 @@
 
 
                 </div>
-                <div>
 
-                </div>
-                <div>
+                <div class="regBlock">
                     <a id="sökfältlink"></a>
                     <h2>Sökfält</h2>
                     <h3>steg 1 - funktionen</h3>

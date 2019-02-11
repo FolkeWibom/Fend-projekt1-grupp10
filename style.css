@@ -158,30 +158,57 @@ article p{
   margin: 0 25%;
 }
 
+article img{
+  height: auto;
+  width: 500px;
+  margin: 30px;
+}
+
 /* ***FÄRGBLOCK*** */
 
 .indexBlock{
 background-color: rgba(93, 92, 91, 0.13);
 padding: 2px;
 }
+
 .htmlBlock{
 background-color: rgba(223, 65, 2, 0.075);
 padding: 2px;
+
 }
+
 .cssBlock{
 background-color: rgba(92, 94, 204, 0.082);
 padding: 2px;
+
 }
+
 .javascriptBlock{
 background-color: rgba(255, 253, 140, 0.479);
 padding: 2px;
+
 }
+
 .photoshopBlock{
 background-color: rgba(129, 173, 255, 0.151);
 padding: 2px;
+
 }
 
+
+
 /* ***KODBLOCK*** */
+
+
+
+/******ANCHOR******/
+
+article a{
+  display: block;
+  position: relative;
+  top: -110px;
+  visibility: hidden;
+}
 
 pre code{
   display: block;
@@ -201,5 +228,4 @@ footer {
 font-family: 'Open Sans', sans-serif;
 width: 100%;
 text-align: center;
-margin-top: 500px;
 }
