@@ -245,4 +245,12 @@ footer {
 font-family: 'Open Sans', sans-serif;
 width: 100%;
 text-align: center;
+
+
+}
+
+.indexFoot{
+  position: absolute;
+  bottom: 0;
+
 }
