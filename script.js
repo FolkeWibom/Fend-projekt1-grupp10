@@ -90,7 +90,7 @@ function searchFunction() {
       document.getElementById('footer'), document.getElementById('summering'), document.getElementById('bildoptimering'),
       document.getElementById('kvalitet'), document.getElementById('storlek'), document.getElementById('filtyper'),
        document.getElementById('selektorer'), document.getElementById('styling'), document.getElementById('boxmodellen'),
-        document.getElementById('position'), document.getElementById('positionering')];
+        document.getElementById('position'), document.getElementById('positionering'), document.getElementById('data')];
   /*Loopar igenom arrayen för att se om inputSearch variabeln matchar något index i arrayen */
   for (let i = 0; i < arr.length; i++) {
 
