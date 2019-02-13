@@ -32,6 +32,7 @@ grid-column-start: 1;
 width: 100px;
 height: 100px;
 align-content: center;
+
 }
 
 /* ***NAVBAR*** */
@@ -208,6 +209,10 @@ background-color: rgba(129, 173, 255, 0.151);
 padding: 2px;
 }
 
+.photoshopBlock p{
+  margin-bottom: 20px;
+}
+
 .regBlock p{
 margin-bottom: 20px;
 }
@@ -245,9 +250,11 @@ footer {
 font-family: 'Open Sans', sans-serif;
 width: 100%;
 text-align: center;
-
+padding: 10px 0px;
 
 }
+
+
 
 .indexFoot{
   position: absolute;
